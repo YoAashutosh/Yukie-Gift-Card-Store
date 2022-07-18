@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="catalog_20048803.css"?>
+<!--
+    Name: Aashutosh Sharma
+    londonmetID: 20048803
+    collegeID: np01cp4s210087
+    description
+-->
+
+<yukie_store xsi:noNamespaceSchemaLocation="catalog_20048803.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <navigation>
+        <logo img="yukie"/>
+        <homelink> HOME </homelink>
+        <storelink> STORE </storelink>
+        <contactlink> CONTACT </contactlink>
+        <searchbox/>
+        <searchcontent>Search Your Card</searchcontent>
+        <signuplink> SIGN UP </signuplink>
+        <signinlink> LOGIN </signinlink>   
+    </navigation>
+    <body_advertisement>
+        <ads img="aash"/>
+    </body_advertisement>
+    <motto_1>Our Shop is Gift To <p>You All</p></motto_1>
+    <motto_2>Your relationship needs something more.</motto_2>
+    <rectangle/>
+    <rectangle_line/>
+    <rectangle_content>Get Your Card</rectangle_content>
+    <popular>Most Popular Cards</popular>
+    <r/>
+    <sort_by>Sort By ↓</sort_by>
+    <store_details>
+        <name>YUKIE</name>
+        <store online="Online">Online Store</store>        
+        <store physical="Physical">Physical Store
+            <time_opening>Store Opens At: 10:00 AM</time_opening>
+            <time_closing>Store Closes At:  6:00 PM</time_closing>
+            <location>Location: 5th Street,3rd Block East,London</location>
+        </store>
+        <number>
+            <mobile_number>Mobile Number: 9876543210</mobile_number>
+            <telephone_number>Telephone: 0123456</telephone_number>
+        </number>
+        <website_address>www.yukie12@gmail.com</website_address>
+    </store_details>
+    <card_properties>
+        <card kind="Online" C_id="C001">
+            <cardImg img="itunes"/>
+            <category customer_type="VIP">
+                <name>Itunes Card</name>
+                <validity>3 years</validity>
+                <price>5000</price>
+                <rating>⭐️⭐️⭐️⭐️</rating>
+                <number_of_user>2 </number_of_user>
+                <voucher_value>10000</voucher_value>
+            </category>
+            <voucher_online>
+                    <voucher_for where="Other">Itunes</voucher_for>
+            </voucher_online>
+        </card>
+        <card kind="Online" C_id="C002">
+            <cardImg img="amazon"/>
+            <category customer_type="MEDIUM">
+                <name>Love</name>
+                <price>1500</price>
+                <rating>⭐️⭐️⭐️</rating>
+                <number_of_user>5 </number_of_user>
+                <voucher_value>25000</voucher_value>
+                <description>Lorem Ipsum </description>
+            </category>
+            <voucher_online>
+                    <voucher_for where="Other">Amazon</voucher_for>
+            </voucher_online>
+        </card>
+        <card kind="Online" C_id="C003">
+            <cardImg img="googleplay"/>
+            <category customer_type="NORMAL">
+                <name>Naruto</name>
+                <validity>6 months</validity>
+                <price>1000</price>
+                <voucher_value>10000</voucher_value>
+                <description>Lorem Ipsum </description>
+            </category>
+            <voucher_online>
+                    <voucher_for where="Other">Googleplay</voucher_for>
+            </voucher_online>
+        </card>
+        <card kind="Online" C_id="C004">
+            <cardImg img="gastation"/>
+            <category customer_type="NORMAL">
+                <name>Kakashi</name>
+                <validity>6 months</validity>
+                <price>2000</price>
+                <rating>⭐️⭐️</rating>
+                <voucher_value>10000</voucher_value>
+            </category>
+            <voucher_online>
+                    <voucher_for where="Gas _Station">Other</voucher_for>
+            </voucher_online>
+        </card>
+        <card kind="Online" C_id="C005">
+            <cardImg img="jewellery"/>
+            <category customer_type="NORMAL">
+                <name>Itachi</name>
+                <validity>6 months</validity>
+                <price>3000</price>
+                <rating>⭐️⭐️</rating>
+                <voucher_value>10000</voucher_value>
+            </category>
+            <voucher_online>
+                    <voucher_for where="Jewllery">Jewellery Shop</voucher_for>
+            </voucher_online>
+        </card>
+        <card kind="Physical" C_id="C006">
+            <cardImg img="netflix"/>
+            <category customer_type="MEDIUM">
+                <name>Hinata</name>
+                <price>1000</price>
+                <rating>⭐️⭐️</rating>
+                <number_of_user>15</number_of_user>
+                <voucher_value>15000</voucher_value>
+                <description>Lorem Ipsum </description>
+            </category>
+            <voucher_physical>
+                    <voucher_for where="Other">Netflix</voucher_for>
+            </voucher_physical> 
+            <delivery type="International">
+                <delivery_period maximum_time="maximum">7 days</delivery_period>
+                <delivery_period1 minimum_time="minimum">3 days</delivery_period1>
+            </delivery>
+            <delivery_charge>
+                    <delivery_means by_air="Aeroplane">Rs 3000</delivery_means>
+            </delivery_charge>
+        </card>
+        <card kind="Physical" C_id="C007">
+            <cardImg img="paypal"/>
+            <category customer_type="VIP">
+                <name>Ichi</name>
+                <validity>3 years</validity>
+                <price>5000</price>
+                <rating>⭐️⭐️⭐️⭐️</rating>
+                <voucher_value>100000</voucher_value>
+                <description>Lorem Ipsum</description>
+            </category>
+            <voucher_physical>
+                    <voucher_for where="Other">Paypal</voucher_for>
+            </voucher_physical>
+            <delivery type="National">
+                <delivery_period maximum_time="max">2 days</delivery_period>
+                <delivery_period1 minimum_type="min">1 day</delivery_period1>
+            </delivery> 
+            <delivery_charge>
+                    <delivery_means by_train="Train">Rs 1500</delivery_means>
+            </delivery_charge>
+        </card>
+        <card kind="Physical" C_id="C007">
+            <cardImg img="restaurant"/>
+            <category customer_type="HIGH">
+                <name>Platinum</name>
+                <validity>2 years</validity>
+                <price>3000</price>
+                <rating>⭐️⭐️⭐️</rating>
+                <voucher_value>80000</voucher_value>
+                <description>Lorem Ipsum </description>
+            </category>
+            <voucher_physical>
+                    <voucher_for where="Restaurant">Restaurant</voucher_for>
+            </voucher_physical> 
+            <delivery type="National">
+                <delivery_period maximum_time="max">2 days</delivery_period>
+                <delivery_period1 minimum_type="min">1 day</delivery_period1>
+            </delivery>
+            <delivery_charge>
+                    <delivery_means by_road="Road">
+                        <delivery_cost for="Bike_Delivery">
+                            <delivery_area distance="More_than_10KM">Rs 1500</delivery_area> 
+                        </delivery_cost>
+                    </delivery_means>
+            </delivery_charge>
+        </card>
+        <card kind="Physical" C_id="C008">
+            <cardImg img="retail"/>
+            <category customer_type="HIGH">
+                <name>Gold</name>
+                <validity>1.5 years</validity>
+                <price>2500</price>
+                <rating>⭐️⭐️⭐️</rating>
+                <voucher_value>50000</voucher_value>
+                <description>Lorem Ipsum </description>
+            </category>
+            <voucher_physical>
+                    <voucher_for where="Retail_Store">Retail Store</voucher_for>
+            </voucher_physical> 
+            <delivery type="National">
+                <delivery_period maximum_time="max">2 days</delivery_period>
+                <delivery_period1 minimum_type="min">1 day</delivery_period1>
+            </delivery>
+            <delivery_charge>
+                    <delivery_means by_road="Road">
+                        <delivery_cost for="Bus_Delivery">
+                            <delivery_area distance="Less_than_3KM">Rs 500</delivery_area>
+                        </delivery_cost>
+                    </delivery_means>      
+            </delivery_charge>    
+        </card>
+        <card kind="Physical" C_id="C009">
+            <cardImg img="spotify"/>
+            <category customer_type="MEDIUM">
+                <name>Silver</name>
+                <validity>1 year</validity>
+                <price>5000</price>
+                <voucher_value>25000</voucher_value>
+            </category>
+            <voucher_physical>   
+                    <voucher_for where="Other">Spotify</voucher_for>
+            </voucher_physical>    
+            <delivery type="National">
+                <delivery_period maximum_time="max">2 days</delivery_period>
+                <delivery_period1 minimum_type="min">1 day</delivery_period1>
+            </delivery>
+            <delivery_charge>
+                    <delivery_means by_road="Road">
+                        <delivery_cost for="Bus_Delivery">
+                            <delivery_area distance="Less_than_3KM">Rs 500</delivery_area>
+                        </delivery_cost>
+                    </delivery_means>
+            </delivery_charge>
+        </card>
+        <card kind="Physical" C_id="C010">
+            <cardImg img="starbucks"/>
+            <category customer_type="NORMAL">
+                <name>Madara</name>
+                <validity>6 months</validity>
+                <voucher_value>10000</voucher_value>
+                <description>Lorem Ipsum</description>
+            </category>
+            <voucher_physical>
+                    <voucher_for where="Restaurant">Restaurant Card</voucher_for>
+            </voucher_physical> 
+            <delivery type="International">
+                <delivery_period maximum_time="maximum">7 days</delivery_period>
+                <delivery_period1 minimum_time="minimum">3 days</delivery_period1>
+            </delivery>
+            <delivery_charge>
+                    <delivery_means by_air="Aeroplane">Rs 3000</delivery_means>
+            </delivery_charge>
+        </card>
+    </card_properties>   
+    <logo_footer>YUKIE</logo_footer>
+    <copyright_footer>COPYRIGHT RIGHTS RESERVED 2022</copyright_footer>
+    <facebook_footer>FACEBOOK</facebook_footer>
+    <instagram_footer>INSTAGRAM</instagram_footer>
+    <line/>
+    <twitter_footer>TWITTER</twitter_footer>
+
+</yukie_store>
+

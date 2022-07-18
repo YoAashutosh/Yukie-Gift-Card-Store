@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="yukie_store" type="yukie_storeType">
+    <xs:annotation>
+      <xs:documentation>Name: Aashutosh Sharma
+    londonmetID: 20048803
+    collegeID: np01cp4s210087
+    description</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="storeType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="time_opening" minOccurs="0"/>
+      <xs:element type="xs:string" name="time_closing" minOccurs="0"/>
+      <xs:element type="xs:string" name="location" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="online" use="optional"/>
+    <xs:attribute type="xs:string" name="physical" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="numberType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="mobile_number"/>
+      <xs:element type="xs:string" name="telephone_number"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cardImgType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="voucher_physicalType">
+    <xs:sequence>
+      <xs:element type="voucher_forType" name="voucher_for"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cardType">
+    <xs:sequence>
+      <xs:element type="cardImgType" name="cardImg"/>
+      <xs:element type="categoryType" name="category"/>
+      <xs:element type="voucher_onlineType" name="voucher_online" minOccurs="0"/>
+      <xs:element type="voucher_physicalType" name="voucher_physical" minOccurs="0"/>
+      <xs:element type="deliveryType" name="delivery" minOccurs="0"/>
+      <xs:element type="delivery_chargeType" name="delivery_charge" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="kind" use="optional"/>
+    <xs:attribute type="xs:string" name="C_id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="deliveryType">
+    <xs:sequence>
+      <xs:element type="delivery_periodType" name="delivery_period"/>
+      <xs:element type="delivery_period1Type" name="delivery_period1"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="delivery_chargeType">
+    <xs:sequence>
+      <xs:element type="delivery_meansType" name="delivery_means"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delivery_meansType" mixed="true">
+    <xs:sequence>
+      <xs:element type="delivery_costType" name="delivery_cost" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="by_air" use="optional"/>
+    <xs:attribute type="xs:string" name="by_train" use="optional"/>
+    <xs:attribute type="xs:string" name="by_road" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="yukie_storeType">
+    <xs:sequence>
+      <xs:element type="navigationType" name="navigation"/>
+      <xs:element type="body_advertisementType" name="body_advertisement"/>
+      <xs:element type="motto_1Type" name="motto_1"/>
+      <xs:element type="xs:string" name="motto_2"/>
+      <xs:element type="xs:string" name="rectangle"/>
+      <xs:element type="xs:string" name="rectangle_line"/>
+      <xs:element type="xs:string" name="rectangle_content"/>
+      <xs:element type="xs:string" name="popular"/>
+      <xs:element type="xs:string" name="r"/>
+      <xs:element type="xs:string" name="sort_by"/>
+      <xs:element type="store_detailsType" name="store_details"/>
+      <xs:element type="card_propertiesType" name="card_properties"/>
+      <xs:element type="xs:string" name="logo_footer"/>
+      <xs:element type="xs:string" name="copyright_footer"/>
+      <xs:element type="xs:string" name="facebook_footer"/>
+      <xs:element type="xs:string" name="instagram_footer"/>
+      <xs:element type="xs:string" name="line"/>
+      <xs:element type="xs:string" name="twitter_footer"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="categoryType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="validity" minOccurs="0"/>
+      <xs:element type="xs:short" name="price" minOccurs="0"/>
+      <xs:element type="xs:string" name="rating" minOccurs="0"/>
+      <xs:element type="xs:float" name="number_of_user" minOccurs="0"/>
+      <xs:element type="xs:int" name="voucher_value"/>
+      <xs:element type="xs:string" name="description" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="customer_type" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="card_propertiesType">
+    <xs:sequence>
+      <xs:element type="cardType" name="card" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delivery_periodType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="maximum_time" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="voucher_forType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="where" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="motto_1Type" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="p"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="voucher_onlineType">
+    <xs:sequence>
+      <xs:element type="voucher_forType" name="voucher_for"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="adsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="body_advertisementType">
+    <xs:sequence>
+      <xs:element type="adsType" name="ads"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="store_detailsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="storeType" name="store" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="numberType" name="number"/>
+      <xs:element type="xs:anyURI" name="website_address"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="navigationType">
+    <xs:sequence>
+      <xs:element type="logoType" name="logo"/>
+      <xs:element type="xs:string" name="homelink"/>
+      <xs:element type="xs:string" name="storelink"/>
+      <xs:element type="xs:string" name="contactlink"/>
+      <xs:element type="xs:string" name="searchbox"/>
+      <xs:element type="xs:string" name="searchcontent"/>
+      <xs:element type="xs:string" name="signuplink"/>
+      <xs:element type="xs:string" name="signinlink"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delivery_costType">
+    <xs:sequence>
+      <xs:element type="delivery_areaType" name="delivery_area"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="for" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="delivery_period1Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="minimum_time" use="optional"/>
+        <xs:attribute type="xs:string" name="minimum_type" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="delivery_areaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="distance" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
